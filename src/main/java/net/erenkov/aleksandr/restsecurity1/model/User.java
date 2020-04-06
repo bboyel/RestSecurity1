@@ -35,6 +35,6 @@ public class User extends BaseEntity {
     @JoinTable(name = "user_roles",                                                     //связь через таблицу ...
             joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")}, //Связь первого поля
             inverseJoinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")}) //Связь второго
-    private List<Role> roles;
+    private List<Role> roles;                           //Как узнают - где какой id?
 
 }

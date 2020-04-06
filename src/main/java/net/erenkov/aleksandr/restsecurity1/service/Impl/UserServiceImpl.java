@@ -68,7 +68,7 @@ public class UserServiceImpl implements UserService {
             return null;
         }
 
-        log.info("IN findById - user: {} found by username : {}", result); //!!!Нужно обработать что пользователь не найден
+        log.info("IN findById - user: {} found by id : {}", result, id); //!!!Нужно обработать, что пользователь не найден
         return result;
     }
 

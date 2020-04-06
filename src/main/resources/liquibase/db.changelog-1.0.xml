@@ -30,13 +30,13 @@
                 <constraints nullable="false"/>
             </column>
 
-<!--            <column name="created" type="TIMESTAMP" defaultValue="CURRENT_TIMESTAMP()">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
+            <column name="created" type="TIMESTAMPTZ" defaultValue="now">
+                <constraints nullable="false"/>
+            </column>
 
-<!--            <column name="updated" type="TIMESTAMP" defaultValue="CURRENT_TIMESTAMP()">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
+            <column name="updated" type="TIMESTAMPTZ" defaultValue="now">
+                <constraints nullable="false"/>
+            </column>
 
             <column name="status" type="VARCHAR(25)" defaultValue="ACTIVE">
                 <constraints nullable="false"/>
@@ -55,13 +55,13 @@
                 <constraints nullable="false" unique="true"/>
             </column>
 
-<!--            <column name="created" type="TIMESTAMP" defaultValue="CURRENT_TIMESTAMP()">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
+            <column name="created" type="TIMESTAMPTZ" defaultValue="now">
+                <constraints nullable="false"/>
+            </column>
 
-<!--            <column name="updated" type="TIMESTAMP" defaultValue="CURRENT_TIMESTAMP()">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
+            <column name="updated" type="TIMESTAMPTZ" defaultValue="now">
+                <constraints nullable="false"/>
+            </column>
 
             <column name="status" type="VARCHAR(25)" defaultValue="ACTIVE">
                 <constraints nullable="false"/>
@@ -69,7 +69,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet id="1.0.2" author="eugene.suleimanov">
+    <changeSet id="1.0.2" author="aleksandr.erenkov">
         <createTable tableName="user_roles">
             <column name="user_id" type="BIGINT">
             </column>
